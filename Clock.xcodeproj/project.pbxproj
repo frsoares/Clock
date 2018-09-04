@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBEA3312211D3CBD006D99D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEA3311211D3CBD006D99D1 /* AppDelegate.swift */; };
+		DBEA3314211D3CBD006D99D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEA3313211D3CBD006D99D1 /* ViewController.swift */; };
+		DBEA3317211D3CBD006D99D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEA3315211D3CBD006D99D1 /* Main.storyboard */; };
+		DBEA3319211D3CC2006D99D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBEA3318211D3CC2006D99D1 /* Assets.xcassets */; };
+		DBEA331C211D3CC2006D99D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEA331A211D3CC2006D99D1 /* LaunchScreen.storyboard */; };
+		DBEA332A21236708006D99D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEA332921236708006D99D1 /* AppDelegate.swift */; };
+		DBEA332F21236708006D99D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEA332D21236708006D99D1 /* Main.storyboard */; };
+		DBEA333121236710006D99D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBEA333021236710006D99D1 /* Assets.xcassets */; };
+		DBEA333621236743006D99D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEA3313211D3CBD006D99D1 /* ViewController.swift */; };
+		DBEA333E2123F96A006D99D1 /* TVServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBEA333D2123F96A006D99D1 /* TVServices.framework */; };
+		DBEA33412123F96A006D99D1 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEA33402123F96A006D99D1 /* ServiceProvider.swift */; };
+		DBEA33452123F96A006D99D1 /* ClockTopShelf.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DBEA333B2123F96A006D99D1 /* ClockTopShelf.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBEA33432123F96A006D99D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBEA3306211D3CBC006D99D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBEA333A2123F96A006D99D1;
+			remoteInfo = ClockTopShelf;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DBEA33492123F96B006D99D1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DBEA33452123F96A006D99D1 /* ClockTopShelf.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DBEA330E211D3CBD006D99D1 /* Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEA3311211D3CBD006D99D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBEA3313211D3CBD006D99D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBEA3316211D3CBD006D99D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBEA3318211D3CC2006D99D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBEA331B211D3CC2006D99D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DBEA331D211D3CC2006D99D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBEA332721236708006D99D1 /* ClockTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEA332921236708006D99D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBEA332E21236708006D99D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBEA333021236710006D99D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBEA333221236710006D99D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBEA333B2123F96A006D99D1 /* ClockTopShelf.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ClockTopShelf.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEA333D2123F96A006D99D1 /* TVServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVServices.framework; path = Library/Frameworks/TVServices.framework; sourceTree = DEVELOPER_DIR; };
+		DBEA33402123F96A006D99D1 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		DBEA33422123F96A006D99D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBEA330B211D3CBC006D99D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEA332421236708006D99D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEA33382123F96A006D99D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEA333E2123F96A006D99D1 /* TVServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBEA3305211D3CBC006D99D1 = {
+			isa = PBXGroup;
+			children = (
+				DBEA3310211D3CBD006D99D1 /* Clock */,
+				DBEA332821236708006D99D1 /* ClockTV */,
+				DBEA333F2123F96A006D99D1 /* ClockTopShelf */,
+				DBEA333C2123F96A006D99D1 /* Frameworks */,
+				DBEA330F211D3CBD006D99D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBEA330F211D3CBD006D99D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBEA330E211D3CBD006D99D1 /* Clock.app */,
+				DBEA332721236708006D99D1 /* ClockTV.app */,
+				DBEA333B2123F96A006D99D1 /* ClockTopShelf.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBEA3310211D3CBD006D99D1 /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				DBEA3311211D3CBD006D99D1 /* AppDelegate.swift */,
+				DBEA3313211D3CBD006D99D1 /* ViewController.swift */,
+				DBEA3315211D3CBD006D99D1 /* Main.storyboard */,
+				DBEA3318211D3CC2006D99D1 /* Assets.xcassets */,
+				DBEA331A211D3CC2006D99D1 /* LaunchScreen.storyboard */,
+				DBEA331D211D3CC2006D99D1 /* Info.plist */,
+			);
+			path = Clock;
+			sourceTree = "<group>";
+		};
+		DBEA332821236708006D99D1 /* ClockTV */ = {
+			isa = PBXGroup;
+			children = (
+				DBEA332921236708006D99D1 /* AppDelegate.swift */,
+				DBEA332D21236708006D99D1 /* Main.storyboard */,
+				DBEA333021236710006D99D1 /* Assets.xcassets */,
+				DBEA333221236710006D99D1 /* Info.plist */,
+			);
+			path = ClockTV;
+			sourceTree = "<group>";
+		};
+		DBEA333C2123F96A006D99D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBEA333D2123F96A006D99D1 /* TVServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBEA333F2123F96A006D99D1 /* ClockTopShelf */ = {
+			isa = PBXGroup;
+			children = (
+				DBEA33402123F96A006D99D1 /* ServiceProvider.swift */,
+				DBEA33422123F96A006D99D1 /* Info.plist */,
+			);
+			path = ClockTopShelf;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBEA330D211D3CBC006D99D1 /* Clock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBEA3320211D3CC2006D99D1 /* Build configuration list for PBXNativeTarget "Clock" */;
+			buildPhases = (
+				DBEA330A211D3CBC006D99D1 /* Sources */,
+				DBEA330B211D3CBC006D99D1 /* Frameworks */,
+				DBEA330C211D3CBC006D99D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Clock;
+			productName = Clock;
+			productReference = DBEA330E211D3CBD006D99D1 /* Clock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBEA332621236708006D99D1 /* ClockTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBEA333321236710006D99D1 /* Build configuration list for PBXNativeTarget "ClockTV" */;
+			buildPhases = (
+				DBEA332321236708006D99D1 /* Sources */,
+				DBEA332421236708006D99D1 /* Frameworks */,
+				DBEA332521236708006D99D1 /* Resources */,
+				DBEA33492123F96B006D99D1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBEA33442123F96A006D99D1 /* PBXTargetDependency */,
+			);
+			name = ClockTV;
+			productName = ClockTV;
+			productReference = DBEA332721236708006D99D1 /* ClockTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBEA333A2123F96A006D99D1 /* ClockTopShelf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBEA33462123F96B006D99D1 /* Build configuration list for PBXNativeTarget "ClockTopShelf" */;
+			buildPhases = (
+				DBEA33372123F96A006D99D1 /* Sources */,
+				DBEA33382123F96A006D99D1 /* Frameworks */,
+				DBEA33392123F96A006D99D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClockTopShelf;
+			productName = ClockTopShelf;
+			productReference = DBEA333B2123F96A006D99D1 /* ClockTopShelf.appex */;
+			productType = "com.apple.product-type.tv-app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBEA3306211D3CBC006D99D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Francisco Soares";
+				TargetAttributes = {
+					DBEA330D211D3CBC006D99D1 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					DBEA332621236708006D99D1 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					DBEA333A2123F96A006D99D1 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = DBEA3309211D3CBC006D99D1 /* Build configuration list for PBXProject "Clock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBEA3305211D3CBC006D99D1;
+			productRefGroup = DBEA330F211D3CBD006D99D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBEA330D211D3CBC006D99D1 /* Clock */,
+				DBEA332621236708006D99D1 /* ClockTV */,
+				DBEA333A2123F96A006D99D1 /* ClockTopShelf */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBEA330C211D3CBC006D99D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEA331C211D3CC2006D99D1 /* LaunchScreen.storyboard in Resources */,
+				DBEA3319211D3CC2006D99D1 /* Assets.xcassets in Resources */,
+				DBEA3317211D3CBD006D99D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEA332521236708006D99D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEA333121236710006D99D1 /* Assets.xcassets in Resources */,
+				DBEA332F21236708006D99D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEA33392123F96A006D99D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBEA330A211D3CBC006D99D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEA3314211D3CBD006D99D1 /* ViewController.swift in Sources */,
+				DBEA3312211D3CBD006D99D1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEA332321236708006D99D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEA333621236743006D99D1 /* ViewController.swift in Sources */,
+				DBEA332A21236708006D99D1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEA33372123F96A006D99D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEA33412123F96A006D99D1 /* ServiceProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBEA33442123F96A006D99D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBEA333A2123F96A006D99D1 /* ClockTopShelf */;
+			targetProxy = DBEA33432123F96A006D99D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DBEA3315211D3CBD006D99D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBEA3316211D3CBD006D99D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DBEA331A211D3CC2006D99D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBEA331B211D3CC2006D99D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DBEA332D21236708006D99D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBEA332E21236708006D99D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBEA331E211D3CC2006D99D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DBEA331F211D3CC2006D99D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBEA3321211D3CC2006D99D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3AMBC8TS93;
+				INFOPLIST_FILE = Clock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.fmssn.Clock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBEA3322211D3CC2006D99D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3AMBC8TS93;
+				INFOPLIST_FILE = Clock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.fmssn.Clock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DBEA333421236710006D99D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3AMBC8TS93;
+				INFOPLIST_FILE = ClockTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.fmssn.ClockTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		DBEA333521236710006D99D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3AMBC8TS93;
+				INFOPLIST_FILE = ClockTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.fmssn.ClockTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Release;
+		};
+		DBEA33472123F96B006D99D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3AMBC8TS93;
+				INFOPLIST_FILE = ClockTopShelf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.fmssn.ClockTV.ClockTopShelf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		DBEA33482123F96B006D99D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3AMBC8TS93;
+				INFOPLIST_FILE = ClockTopShelf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.fmssn.ClockTV.ClockTopShelf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBEA3309211D3CBC006D99D1 /* Build configuration list for PBXProject "Clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBEA331E211D3CC2006D99D1 /* Debug */,
+				DBEA331F211D3CC2006D99D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBEA3320211D3CC2006D99D1 /* Build configuration list for PBXNativeTarget "Clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBEA3321211D3CC2006D99D1 /* Debug */,
+				DBEA3322211D3CC2006D99D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBEA333321236710006D99D1 /* Build configuration list for PBXNativeTarget "ClockTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBEA333421236710006D99D1 /* Debug */,
+				DBEA333521236710006D99D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBEA33462123F96B006D99D1 /* Build configuration list for PBXNativeTarget "ClockTopShelf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBEA33472123F96B006D99D1 /* Debug */,
+				DBEA33482123F96B006D99D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBEA3306211D3CBC006D99D1 /* Project object */;
+}

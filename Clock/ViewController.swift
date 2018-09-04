@@ -41,7 +41,12 @@ class ViewController: UIViewController {
         
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
 
+    // MARK: Examples of button pressing functions
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         print("touches began")
@@ -78,14 +83,10 @@ class ViewController: UIViewController {
         print("presses ended")
     }
     
+    // pressesCancelled is usually called when a gesture is identified by a gestureRecognizer, thus turning low-level button press recognition useless.
     override func pressesCancelled(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
         print("presses cancelled")
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }

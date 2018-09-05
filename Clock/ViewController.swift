@@ -12,7 +12,6 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var timeLabel : UILabel!
     
-    // FIXME: make the timer whatever
     var timer : Timer!
     
     override func viewDidLoad() {

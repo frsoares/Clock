@@ -26,27 +26,27 @@ class ServiceProvider: NSObject, TVTopShelfProvider {
         // Create an array of TVContentItems.
         
         let wrapperID = TVContentIdentifier(identifier: "wrapper", container: nil)
-        let wrapperItem = TVContentItem(contentIdentifier: wrapperID!)
+        let wrapperItem = TVContentItem(contentIdentifier: wrapperID)
         
         let date = Date()
         let df = DateFormatter()
         df.dateFormat = "HH'h'mm"
         let stringDate = df.string(from: date)
-        let tvcItem = TVContentItem(contentIdentifier: TVContentIdentifier(identifier: "Teste", container: wrapperID)!)
-        tvcItem?.title = stringDate
-        tvcItem?.imageShape = .square
+        let tvcItem = TVContentItem(contentIdentifier: TVContentIdentifier(identifier: "Teste", container: wrapperID))
+        tvcItem.title = stringDate
+        tvcItem.imageShape = .square
         
         // creating the item's image
         let view = makeView(from: stringDate)
         let image = loadImageFrom(view: view)
         let imageUrl = save(image: image)
         
-        tvcItem?.setImageURL(imageUrl, forTraits: .screenScale1x)
+        tvcItem.setImageURL(imageUrl, forTraits: .screenScale1x)
         
-        wrapperItem?.title = stringDate//"Wrapper Item"
-        wrapperItem?.topShelfItems = [tvcItem!]
+        wrapperItem.title = stringDate//"Wrapper Item"
+        wrapperItem.topShelfItems = [tvcItem]
         
-        return [wrapperItem!]
+        return [wrapperItem]
     }
 
 }
@@ -67,7 +67,7 @@ func save(image: UIImage) -> URL? {
         .appendingPathComponent(UUID().uuidString)
         .appendingPathExtension("png")
     
-    if let data = UIImagePNGRepresentation(image) {
+    if let data = image.pngData() {
         try? data.write(to: url)
     }
     

@@ -220,6 +220,7 @@
 				TargetAttributes = {
 					DBEA330D211D3CBC006D99D1 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1100;
 					};
 					DBEA332621236708006D99D1 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -470,7 +471,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.fmssn.Clock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -488,7 +489,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.fmssn.Clock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

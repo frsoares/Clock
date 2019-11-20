@@ -7,15 +7,26 @@
 //
 
 import UIKit
+#if !targetEnvironment(macCatalyst)
+import SwiftUI
+#endif
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        #if !targetEnvironment(macCatalyst)
+        let clock = Clock()
+        clock.start()
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.rootViewController = UIHostingController(rootView: ContentView(clock: clock))
+        self.window = window
+        window.makeKeyAndVisible()
+        #endif
         return true
     }
 
